@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- ✏️ CHANGE THIS: Update the title to match your passion topic -->
+    <title>Fifa 2026</title>
+</head>
+
+<body>
+
+    <!-- =====================================================================
+         HERO SECTION
+         This is the big banner at the top of your page.
+         ✏️ CHANGE: Replace the text between the tags with your page title.
+         ✏️ CHANGE: You can also swap the background image in style.css.
+         ===================================================================== -->
+    <section class="hero">
+        <div class="hero-text"></div>
+    </section>
+
+
+    <!-- =====================================================================
+         INTRO SECTION
+         A short paragraph introducing your topic to your audience.
+         ✏️ CHANGE: Replace ALL the placeholder text below with your own words.
+         ===================================================================== -->
+    <section class="intro">
+        <h2>Welcome to my page about the FIFA World Cup 2026</h2>
+        <p>
+        This year, 48 countries face off to find a world champion. Over 39 days, teams first face off in the group stage where they compete to earn points in their bracket. At the end of the group stage, the top 2 teams in each group qualify for the knockout rounds along with the top 8 3rd place teams. The knockout stage is a single elimination styled bracket, meaning one loss, and the team is eliminated from the tournament. Matches take place throughout North America, featuring arenas in Mexico, the United States, and Canada.
+        </p>
+    </section>
+
+
+    <!-- =====================================================================
+         MAIN CONTENT SECTION
+         Three cards with images and captions about your topic.
+         ✏️ CHANGE: Replace the placeholder images with your own (put them in the images/ folder).
+         ✏️ CHANGE: Replace the alt text and captions with something meaningful.
+         ===================================================================== -->
+    <section class="topic">
+        <div class="topic-title">
+            <h1>Fifa This Year</h1>
+        </div>
+
+        <div class="topic-content">
+
+            <!-- Card 1 -->
+            <div class="topic-card">
+                <img src="images/messi.jpg" alt="Messi">
+                <h2 class="topic-card-text">Many star players, such as Lionel Messi (seen above), Christiano Rondaldo and Neymar, are making their final appearances in this world cup</h2>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="topic-card">
+                <img src="images/fifa-logo.jpg" alt="Fifa 2026 Logo">
+                <h2 class="topic-card-text">The world cup logo features the trophy, which will be taken home by the winner of the finals</h2>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="topic-card">
+                <img src="images/cape verde flag.png" alt="Cape verde's flag">
+                <h2 class="topic-card-text">4 teams make their world cup debuts this year, including Cabo Verde (seen above), Jordan, Uzbekistan, and Curaçao</h2>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================================================
+         HIDDEN "DID YOU KNOW?" SECTION — JAVASCRIPT REVEAL
+         This section is hidden when the page loads.
+         When the user clicks the button, JavaScript shows the hidden content.
+         ✏️ CHANGE: Replace the fact text with an interesting fact about your topic.
+         ✏️ DO NOT DELETE: Keep the id="hidden-fact" and id="reveal-btn" as they are —
+             the JavaScript below needs these exact names to work.
+         ===================================================================== -->
+    <section class="fact-section">
+        <div class="topic-title">
+            <h1>Did You Know?</h1>
+        </div>
+
+        <div class="fact-container">
+            <button id="reveal-btn" onclick="revealFact()">Click to reveal a fact!</button>
+
+            <!-- This div is hidden until the button is clicked -->
+            <div id="hidden-fact" class="hidden">
+                <p>
+                Although the world cup has matches in many famous stadiums - such as the Levi's stadium or Mercedez-Benz stadium - had to rebrand/rename due to a fifa policy. Since the advertising companies weren't offical Fifa sponsers, they had to cover up/remove advertising and rename the stadium for the Fifa season.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================================
+         FOOTER
+         ✏️ CHANGE: Replace "Student Name" with your actual name.
+         ✏️ CHANGE: Update the year if needed.
+         ===================================================================== -->
+    <footer class="footer">
+        <p>&copy; 2026 My Passion Page — By Leo Bendall</p>
+    </footer>
+
+
+    <!-- =====================================================================
+         JAVASCRIPT
+         This script makes the hidden fact section appear when the button is clicked.
+         ⚠️  DO NOT EDIT this section unless you know what you are doing.
+         ===================================================================== -->
+    <script>
+        function revealFact() {
+            // Find the hidden section and the button
+            var fact = document.getElementById("hidden-fact");
+            var btn = document.getElementById("reveal-btn");
+
+            // Show the hidden section
+            fact.classList.remove("hidden");
+            fact.classList.add("visible");
+
+            // Change the button text so the user knows it worked
+            btn.textContent = "There it is!";
+            btn.disabled = true;
+        }
+    </script>
+
+</body>
+</html>
